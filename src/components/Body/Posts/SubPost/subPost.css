@@ -1,0 +1,10 @@
+.SubPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1em;
+    margin: 5em;
+}
+.subPost-image{
+    width: 30%;
+}
