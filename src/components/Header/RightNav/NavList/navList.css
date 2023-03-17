@@ -1,7 +1,16 @@
-.List{
+.List {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     column-gap: 3em;
     align-items: center;
+    margin-top: 0.5em;
+    justify-content: center;
+}
+
+@media(min-width:675px) {
+    .List {
+        flex-direction: row;
+        margin-top: 0;
+    }
 }

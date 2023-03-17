@@ -5,6 +5,81 @@
     column-gap: 1em;
     margin: 5em;
 }
-.subPost-image{
-    width: 30%;
+.article-image {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+
+}
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    text-align: initial;
+
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+
+}
+.article-title {
+    font-size: 1.5rem;
+    color: #143774;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+
+    color: #143774;
+    text-decoration: underline;
+
+}
+
+.article-body {
+    color: #707070;
+    font-size: 18px;
+}
+
+.article-info {
+    color: #707070;
+    margin: 2em 0;
+}
+@media(min-width:675px) {
+    
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
 }

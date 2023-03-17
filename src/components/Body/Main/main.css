@@ -1,5 +1,6 @@
-.main{
-    width: 75%;
-    margin-left: 1em;
-    padding-left: 3em;
+
+@media(min-width:675px) {
+    .main{
+        width: 70%;
+    }
 }

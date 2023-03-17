@@ -1,0 +1,15 @@
+@media(min-width:675px) {
+    .sidebar {
+        width: 25%;
+        margin-left: 1em;
+        min-width: 200px;
+    }
+
+}
+
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+    text-align: initial;
+}

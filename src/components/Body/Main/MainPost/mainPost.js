@@ -1,22 +1,31 @@
-import Link from "../../../Link/link"
-import MainTitle from "../../../MainTitle/mainTitle"
-import Paragraph from "../../../Paragraph/paragraph"
-import Photo from "../../../Photo/photo"
+import Link from "../../../Link/link";
+import MainTitle from "../../../MainTitle/mainTitle";
+import Paragraph from "../../../Paragraph/paragraph";
+import Photo from "../../../Photo/photo";
+import "./mainPost.css";
+const logo = '/images/life.jpg';
+const ProfilePhoto = '/images/Rana.jpg';
 
-const MainPost =()=>{
-    const paragraph = `Life can get complicated really quickly,
-    but it doesn't have to be! There are many ways to simplify your life,
-   a few of which we've explored in the past. This week we're taking a bit of a approach though,
-    in how you can find simplicity in the life you already living`
-    
-    return(
-        <div>
-      
-        <Photo/>
-        <MainTitle title="Finding Simplicity in Life"/>
-        <Paragraph text={paragraph}/>
-        <Link  class="readMore" text="Continue Reading"/>
-        </div>
-    )
-}
+
+const MainPost = (props) => {
+
+ 
+  return (
+    props.pathName !== '/About%20Me' ? 
+    <div className="article-featured">
+      <Photo className="basic-image" src={logo} />
+      <Paragraph text={props.comments} className="article-info" />
+
+      <MainTitle title={props.mainTitle} className="article-title" />
+
+      <Paragraph text={props.content} className="article-body" />
+      <Link className="article-read-more" text="Continue Reading" />
+  
+ 
+    </div>:  <><Photo className="image-full" src={ProfilePhoto} />
+   <MainTitle title={props.mainTitle}  className="article-title" />
+  <Paragraph text={props.content} className="article-body" />
+  </>
+  );
+};
 export default MainPost;

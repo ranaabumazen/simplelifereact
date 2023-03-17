@@ -1,0 +1,14 @@
+.link-item{
+    text-decoration: none;
+    color: #717171;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 675px){
+.link-item{ 
+   margin-top: 0.9em;
+}
+}

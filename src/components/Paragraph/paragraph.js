@@ -1,9 +1,6 @@
+import "./paragraph.css";
 
-const Paragraph =({text="paragraph"})=>{
-    return(
-      <p>
-        {text} 
-      </p>
-    )
-}
+const Paragraph = (props) => {
+  return <p className={props.className}>{props.text}</p>;
+};
 export default Paragraph;

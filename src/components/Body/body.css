@@ -1,5 +1,21 @@
-.body{
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.container-flex {
     display: flex;
-    justify-content: center;
-    column-gap: 2em;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+@media(min-width:675px) {
+   
+
+    .container-flex {
+        flex-direction: row;
+    }
 }
