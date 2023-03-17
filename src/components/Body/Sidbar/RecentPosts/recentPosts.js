@@ -1,39 +1,29 @@
-import Divider from "../../../Divider/divider";
 import RecentPost from "./RecentPost/recentPost";
-import './recentPosts.css';
-import Food from '../../../../images/food.jpg';
-import Work from '../../../../images/work.jpg';
+import "./recentPosts.css";
 
-import Decor from '../../../../images/decor.jpg';
+const workImg = "/images/work.jpg";
+const decorImg = "/images/decor.jpg";
 
+const foodImg = "/images/food.jpg";
 
-
-const RecentPosts=()=>{
-    const posts=[{
-        title:'Keeping Cooking Simple',
-        src:Food
+const RecentPosts = () => {
+  const posts = [
+    {
+      title: "Keeping Cooking Simple",
+      src: foodImg,
     },
-{title:"Simplicity and Work",
-src:Work},
-{title:'Simple Decoration',
-src:Decor
-}
-]
-    return(
-   <div className="recent-posts">
-      <h1>Recent Posts</h1>
-      {posts.map(el=>{
-        return(
-       <div>
-            <RecentPost title={el.title} src={el.src}/>
-            <Divider/>
-         </div> 
-        )
+    { title: "Simplicity and Work", src: workImg },
+    { title: "Simple Decoration", src: decorImg },
+  ];
+  return (
+    <div className="sidebar-widget">
+      <h2 className="widget-title">RECENT POSTS</h2>
+      {posts.map((el, i) => {
+        return (
+          <RecentPost index={i} title={el.title} src={el.src} key={el.title} />
+        );
       })}
-   
-   
-  
-   </div>
-    )
-}
+    </div>
+  );
+};
 export default RecentPosts;

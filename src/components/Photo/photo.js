@@ -1,8 +1,7 @@
-import logo from '../../images/life.jpg';
 
-const Photo =({styleCalss,src=logo})=>{
+const Photo =(props)=>{
     return(
-       <img src={src} className={styleCalss}/>
+       <img src={props.src} {...props}/>
     )
 }
 export default Photo;

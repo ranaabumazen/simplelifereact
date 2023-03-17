@@ -1,15 +1,19 @@
 import MainTitle from "../../../../MainTitle/mainTitle";
 import Photo from "../../../../Photo/photo";
-import './recentPost.css';
+import "./recentPost.css";
 
-const RecentPost=(props)=>{
-    return(
-    <div className="recent-post">
-      
-        <Photo styleCalss="subPost-image" src={props.src}/>
-        <MainTitle title={props.title}/>
-        
+const RecentPost = (props) => {
+  return (
+    <div
+      className={
+        props.index !== 2
+          ? "widget-recent-post"
+          : "widget-recent-post-last-child"
+      }
+    >
+      <MainTitle className="widget-post-title" title={props.title} />
+      <Photo className="widget-image" src={props.src} />
     </div>
-    )
-}
+  );
+};
 export default RecentPost;

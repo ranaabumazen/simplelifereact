@@ -1,8 +1,13 @@
-import './link.css';
+import "./link.css";
 
-const Link =(props)=>{
-    return(
-      <a href="#" className={props.class}>{props.text}</a>
-    )
-}
+const Link = (props) => {
+  return (
+    <a href={props.href} 
+    {...props} 
+    style={{textDecoration:props.underline}}
+    >
+      {props.text}
+    </a>
+  );
+};
 export default Link;

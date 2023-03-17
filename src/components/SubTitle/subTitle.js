@@ -1,10 +1,6 @@
-import  './subTitle.css';
+import "./subTitle.css";
 
-const SubTitle = ()=>{
-    return(
-        <div className="SubTitle">
-            <h6>Living the Simple Life</h6>
-        </div>
-    )
-}
+const SubTitle = (props) => {
+  return <h6 {...props}>{props.title}</h6>;
+};
 export default SubTitle;

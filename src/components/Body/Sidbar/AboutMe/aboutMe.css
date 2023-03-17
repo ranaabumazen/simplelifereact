@@ -1,12 +1,27 @@
 .aboutMe-image{
-    width: 70%;
+    max-width: 100%;
 }
-.aboutMe{
-     
-    margin-top: 1em;
-    border: 12px solid lightgray;
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
     padding: 1em;
+    text-align: initial;
+}
+.widget-image {
+    order: -1
 }
 
 
-    
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    color: #143774;
+    font-size: 1.688rem;
+}
+.aboutme-p{
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+}
+

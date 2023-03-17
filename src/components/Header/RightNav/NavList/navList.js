@@ -1,16 +1,17 @@
 import NavItem from "./NavItem/navItem";
-import './navList.css';
+import "./navList.css";
 
-const NavList =()=>{
-    const items = ['Home','About','Recent Posts'];
-
-    return(
-        <div className="List">
-        {items.map((el)=>{
-        return (<div key={el}>{el}</div>)
-        })}
-     </div>
-
-    )
-}
+const NavList = (props) => {
+  return (
+    <div className="List">
+      {props.items.map((el) => {
+        return <NavItem 
+        item={el} 
+        key={el} 
+        underline={el=='Home' ? 'underline':'none'}
+        />;
+      })}
+    </div>
+  );
+};
 export default NavList;
