@@ -1,5 +1,3 @@
-import "./paragraph.css";
-
 const Paragraph = (props) => {
   return <p className={props.className}>{props.text}</p>;
 };
