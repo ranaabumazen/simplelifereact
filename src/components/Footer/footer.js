@@ -1,4 +1,3 @@
-import MainTitle from "../MainTitle/mainTitle";
 import Paragraph from "../Paragraph/paragraph";
 import "./footer.css";
 

@@ -8,7 +8,7 @@ const NavList = (props) => {
         return <NavItem 
         item={el} 
         key={el} 
-        underline={el=='Home' ? 'underline':'none'}
+        underline={el==='Home' ? 'underline':'none'}
         />;
       })}
     </div>
