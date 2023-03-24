@@ -54,7 +54,7 @@ const Body = () => {
   return (
     <div className="container container-flex">
       <Main 
-      posts={pathName =='/Recent%20Posts' ? [newRecntPost,...posts]:posts}   //this is termporarly (I want to use react router )
+      posts={pathName ==='/Recent%20Posts' ? [newRecntPost,...posts]:posts}   //this is termporarly (I want to use react router )
       pathName={pathName}
       />
       <SideBar />
